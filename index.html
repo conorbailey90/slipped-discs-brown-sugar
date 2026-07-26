@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Slipped Discs' Brown Sugar: coffee &amp; records, Billericay</title>
+<meta name="description" content="A much-loved independent cafe and record shop on Billericay High Street. Speciality coffee and hot drinks, fresh cafe snacks and cake, cosy seating inside and out, plus a brilliant selection of vinyl and CDs to browse." />
+<meta name="theme-color" content="#FBF6EC" />
+<!-- Social sharing. og:image should be an absolute URL once the domain is live. -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Slipped Discs' Brown Sugar: coffee &amp; records, Billericay" />
+<meta property="og:description" content="A much-loved independent cafe and record shop on Billericay High Street. Speciality coffee and hot drinks, fresh cafe snacks and cake, cosy seating inside and out, plus a brilliant selection of vinyl and CDs to browse." />
+<meta property="og:image" content="assets/ph/store-front.jpg" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="assets/logo.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Slipped Discs' Brown Sugar",
+  "description": "Independent cafe and record shop on Billericay High Street. Speciality coffee, cake all day, and vinyl and CDs to dig through.",
+  "telephone": "+441277631422",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "57-59 High Street",
+    "addressLocality": "Billericay",
+    "postalCode": "CM12 9AX",
+    "addressCountry": "GB"
+  },
+  "image": "assets/ph/store-front.jpg",
+  "priceRange": "£",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "16:00"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="image-slot.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#top">Skip to content</a>
+
+<div style="max-width:100%; overflow-x:hidden; padding-top:73px">
+
+<header style="position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(251,246,236,0.92); backdrop-filter:blur(10px); border-bottom:1px solid rgba(43,28,36,0.1)">
+  <div style="max-width:1180px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; gap:28px">
+    <a href="#top" style="display:flex; align-items:center; gap:12px; flex:0 0 auto">
+      <img src="assets/logo.jpg" alt="Slipped Discs' Brown Sugar" style="width:44px; height:44px; border-radius:50%; display:block; border: 1px solid black;" />
+      <span style="display:flex; flex-direction:column; line-height:1">
+        <span style="display:inline-flex; align-items:baseline; gap:6px; color:#6B1F45">
+          <span style="font-family:'Google Sans','Poppins',sans-serif; font-weight:500; font-size:19px; letter-spacing:-0.5px; text-transform:uppercase">Slipped Discs&rsquo;</span>
+          <span style="font-family:'Alex Brush',cursive; font-size:19px; line-height:0.7">Brown Sugar</span>
+        </span>
+        <span style="font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:#8A7A80; margin-top:6px">Coffee &amp; records &middot; Billericay</span>
+      </span>
+    </a>
+    <nav class="nav-links" style="margin-left:auto; font-size:14px; font-weight:500">
+      <a href="#menu" style="color:#2B1C24">Menu</a>
+      <a href="#stock" style="color:#2B1C24">In stock</a>
+      <a href="#shop" style="color:#2B1C24">The shop</a>
+      <a href="#visit" style="color:#2B1C24">Visit</a>
+      <a class="nav-cta" href="tel:01277631422" style="padding:9px 16px; border-radius:999px; background:#6B1F45; color:#FBF6EC; font-weight:600">01277 631422</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Full-screen mobile menu. Kept outside <header> because the header's
+     backdrop-filter would otherwise become the containing block for this
+     position:fixed overlay and clip it to the header's height. -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-nav-top">
+    <span class="mobile-nav-eyebrow">Coffee &amp; records &middot; Billericay</span>
+    <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav-links">
+    <a href="#menu"><span class="mn-idx">01</span><span class="mn-label">Menu</span></a>
+    <a href="#stock"><span class="mn-idx">02</span><span class="mn-label">In stock</span></a>
+    <a href="#shop"><span class="mn-idx">03</span><span class="mn-label">The shop</span></a>
+    <a href="#visit"><span class="mn-idx">04</span><span class="mn-label">Visit</span></a>
+  </nav>
+  <div class="mobile-nav-foot">
+    <a href="tel:01277631422">01277 631422</a>
+    <span>57&ndash;59 High Street, Billericay</span>
+    <span id="sdbs-open-today-mobile">Open today 9am &ndash; 5pm</span>
+  </div>
+</div>
+
+<section id="top" style="max-width:1180px; margin:0 auto; padding:64px 28px 0">
+  <div class="hero-grid">
+    <div style="min-width:0">
+      <div style="display:inline-flex; align-items:center; gap:9px; padding:6px 13px; border-radius:999px; background:#DCE9EB; color:#3F6B72; font-size:12px; font-weight:600; letter-spacing:0.05em">
+        <span id="sdbs-open-dot" style="width:6px; height:6px; border-radius:50%; background:#6B1F45"></span>
+        <span>57&ndash;59 High Street &middot; <span id="sdbs-open-today">open today 9am &ndash; 5pm</span></span>
+      </div>
+      <h1 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(38px,4.7vw,62px); line-height:1.06; letter-spacing:-0.015em; margin:22px 0 0; color:#2B1C24; text-wrap:balance">
+        Brilliant coffee, proper cafe snacks, and a <em style="color:#6B1F45">rack of records</em> to dig through.
+      </h1>
+      <p style="font-size:18px; line-height:1.6; color:#5C4A52; max-width:31em; margin:22px 0 0; text-wrap:pretty">
+        We&rsquo;re a much-loved independent cafe on Billericay High Street with a record shop built right in. Order a silky flat white or a proper hot chocolate, settle into a table inside or grab a sunny seat out front, then lose twenty happy minutes flicking through vinyl you weren&rsquo;t planning to buy. Everyone does it.
+      </p>
+      <div style="display:flex; gap:12px; margin-top:30px; flex-wrap:wrap">
+        <a href="#menu" style="padding:14px 24px; border-radius:999px; background:#6B1F45; color:#FBF6EC; font-weight:600; font-size:15px">See the menu</a>
+        <a href="#stock" style="padding:14px 24px; border-radius:999px; border:1px solid rgba(43,28,36,0.2); color:#2B1C24; font-weight:600; font-size:15px">Browse what&rsquo;s in stock</a>
+      </div>
+    </div>
+    <div class="hero-media" style="position:relative; min-width:0">
+      <div style="position:relative; height:520px; border-radius:20px; overflow:hidden; background:#DCE9EB; min-width:0; border: 1px solid rgba(0, 0, 0, 0.695);">
+        <image-slot id="sdbs-hero" shape="rect" fit="cover" src="assets/ph/store-front.jpg" placeholder="The shopfront on Billericay High Street"></image-slot>
+      </div>
+      <div style="position:absolute; bottom:-22px; left:-22px; width:150px; height:150px; border-radius:50%; overflow:hidden; border:6px solid #FBF6EC; background:#F4E9BE ; border: 1px solid rgba(0, 0, 0, 0.695);">
+        <image-slot id="sdbs-hero-coffee" shape="rect" fit="cover" src="assets/ph/coffee.png" placeholder="Coffee close-up"></image-slot>
+      </div>
+    </div>
+  </div>
+  <div class="feature-grid" style="margin-top:72px; background:rgba(43,28,36,0.12); border-radius:16px; overflow:hidden">
+    <div style="background:#FBF6EC; padding:26px 28px">
+      <div style="font-family:'Instrument Serif',serif; font-size:30px; color:#6B1F45">Coffee &amp; hot drinks</div>
+      <p style="margin:8px 0 0; font-size:14px; line-height:1.55; color:#5C4A52">Locally roasted beans pulled by hand, velvety flat whites, proper hot chocolates and spiced chai. Oat, soya and coconut always at no extra charge.</p>
+    </div>
+    <div style="background:#FBF6EC; padding:26px 28px">
+      <div style="font-family:'Instrument Serif',serif; font-size:30px; color:#6B1F45">Cafe snacks &amp; cake</div>
+      <p style="margin:8px 0 0; font-size:14px; line-height:1.55; color:#5C4A52">Golden toasties, bacon rolls, warm scones and generous slices of cake, baked nearby and cut with a heavy hand. Gluten-free and vegan most days.</p>
+    </div>
+    <div style="background:#FBF6EC; padding:26px 28px">
+      <div style="font-family:'Instrument Serif',serif; font-size:30px; color:#6B1F45">Vinyl &amp; CDs</div>
+      <p style="margin:8px 0 0; font-size:14px; line-height:1.55; color:#5C4A52">An amazing selection of new pressings, secondhand gems and the odd perfect gift, all waiting to be browsed. Fresh finds land every week.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="max-width:1180px; margin:0 auto; padding:104px 28px 0">
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap">
+    <div>
+      <div style="font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A7A80">The menu</div>
+      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(34px,4vw,52px); line-height:1.05; margin:12px 0 0">Hot drinks, sweet treats and proper cafe food</h2>
+    </div>
+    <p style="font-size:14px; color:#5C4A52; max-width:26em; margin:0; line-height:1.6">Eat in at a comfy table or grab a cup for the walk, it&rsquo;s the same price either way. Ask about the daily specials board. It changes with whatever the kitchen fancies.</p>
+  </div>
+
+  <div class="menu-grid" style="margin-top:40px">
+    <div style="background:#FFFFFF; border:1px solid rgba(43,28,36,0.09); border-radius:18px; padding:30px 32px">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px">
+        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:27px; margin:0">Coffee</h3>
+        <div style="flex:1; height:1px; background:rgba(43,28,36,0.12)"></div>
+      </div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:15px">
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Espresso</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£2.40</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Flat white</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.30</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Latte</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.40</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Cappuccino</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.40</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Americano</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.00</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Mocha</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.60</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Iced latte</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.60</span></li>
+      </ul>
+      <p style="margin:20px 0 0; font-size:13px; color:#8A7A80">Oat, soya and coconut, always at no extra charge. Decaf whenever you fancy.</p>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid rgba(43,28,36,0.09); border-radius:18px; padding:30px 32px">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px">
+        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:27px; margin:0">Other drinks</h3>
+        <div style="flex:1; height:1px; background:rgba(43,28,36,0.12)"></div>
+      </div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:15px">
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Hot chocolate</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.50</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Deluxe hot choc, cream &amp; marshmallows</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£4.20</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Pot of tea</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£2.80</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Herbal &amp; fruit teas</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£2.90</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Chai latte</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.60</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Milkshake</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£4.00</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Soft drinks &amp; juices</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£2.20</span></li>
+      </ul>
+      <p style="margin:20px 0 0; font-size:13px; color:#8A7A80">Bring your own cup and take 30p off any hot drink.</p>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid rgba(43,28,36,0.09); border-radius:18px; padding:30px 32px">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px">
+        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:27px; margin:0">Cakes &amp; bakes</h3>
+        <div style="flex:1; height:1px; background:rgba(43,28,36,0.12)"></div>
+      </div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:15px">
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Victoria sponge</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.80</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Coffee &amp; walnut</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.80</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Carrot cake</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.90</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Salted caramel brownie</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.50</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Lemon drizzle</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.60</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Warm scone, jam &amp; cream</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.40</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Toasted teacake</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£2.90</span></li>
+      </ul>
+      <p style="margin:20px 0 0; font-size:13px; color:#8A7A80">Gluten-free and vegan bakes most days, just ask at the counter.</p>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid rgba(43,28,36,0.09); border-radius:18px; padding:30px 32px">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px">
+        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:27px; margin:0">Light bites</h3>
+        <div style="flex:1; height:1px; background:rgba(43,28,36,0.12)"></div>
+      </div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:15px">
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Bacon roll</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£4.50</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Toasted cheese &amp; ham sandwich</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£5.50</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Beans on sourdough toast</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£4.80</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Soup of the day &amp; bread</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£5.90</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Sausage roll</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£3.20</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Cheese toastie</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£4.90</span></li>
+        <li style="display:flex; gap:14px; align-items:baseline"><span style="font-weight:600; font-size:15px">Crisps &amp; snacks</span><span style="flex:1; border-bottom:1px dotted rgba(43,28,36,0.25)"></span><span style="font-variant-numeric:tabular-nums; color:#6B1F45; font-weight:600">£1.30</span></li>
+      </ul>
+      <p style="margin:20px 0 0; font-size:13px; color:#8A7A80">Placeholder pricing. Send us your real menu and we&rsquo;ll swap it in.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stock" style="margin-top:104px; background:#F1E9DA; border-top:1px solid rgba(43,28,36,0.09); border-bottom:1px solid rgba(43,28,36,0.09)">
+  <div style="max-width:1180px; margin:0 auto; padding:76px 28px 84px">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap">
+      <div>
+        <div style="font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A7A80">In stock now</div>
+        <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(34px,4vw,52px); line-height:1.05; margin:12px 0 0">Browse what&rsquo;s on the shelves</h2>
+      </div>
+      <p style="font-size:14px; color:#5C4A52; max-width:26em; margin:0; line-height:1.6">A little taste of what&rsquo;s in the racks right now, refreshed every week. Come and dig through the full selection in person, and if something&rsquo;s gone we&rsquo;ll happily track a copy down for you.</p>
+    </div>
+
+    <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:34px; padding:16px 18px; background:#FBF6EC; border:1px solid rgba(43,28,36,0.1); border-radius:14px">
+      <div style="position:relative; flex:1 1 250px; min-width:220px">
+        <input id="sdbs-search" type="search" aria-label="Search stock by artist, title or item" placeholder="Search artist, title or item&hellip;" style="width:100%; padding:11px 14px 11px 38px; border-radius:999px; border:1px solid rgba(43,28,36,0.18); background:#FFFFFF; font-family:Karla,sans-serif; font-size:14px; color:#2B1C24; outline:none" />
+        <span aria-hidden="true" style="position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:13px; color:#8A7A80">&#9906;</span>
+      </div>
+      <div id="sdbs-formats" style="display:flex; gap:8px; flex-wrap:wrap"></div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-left:auto; align-items:center">
+        <span style="font-size:12px; color:#8A7A80; letter-spacing:0.04em">Sort</span>
+        <div id="sdbs-sorts" style="display:flex; gap:8px; flex-wrap:wrap"></div>
+      </div>
+    </div>
+
+    <div id="sdbs-genres" style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px"></div>
+
+    <div style="display:flex; align-items:baseline; gap:10px; margin-top:26px">
+      <span id="sdbs-result-label" aria-live="polite" style="font-size:13px; color:#5C4A52"></span>
+      <button id="sdbs-reset" type="button">Clear filters</button>
+    </div>
+
+    <div id="sdbs-grid" class="stock-grid" style="margin-top:18px"></div>
+
+    <div id="sdbs-empty" style="display:none; margin-top:30px; padding:40px; text-align:center; background:#FBF6EC; border:1px dashed rgba(43,28,36,0.2); border-radius:16px">
+      <div style="font-family:'Instrument Serif',serif; font-size:26px; color:#6B1F45">Nothing matching that</div>
+      <p style="margin:8px 0 0; font-size:14px; color:#5C4A52">Try a different genre, or ring us on 01277 631422 and we&rsquo;ll check the back.</p>
+    </div>
+
+    <p style="margin:28px 0 0; font-size:13px; color:#8A7A80; max-width:44em; line-height:1.6">Stock listings here are placeholders for layout. Once you&rsquo;re happy with the design we can wire this grid to a real inventory list you update yourself.</p>
+  </div>
+</section>
+
+<section id="shop" style="max-width:1180px; margin:0 auto; padding:96px 28px 0">
+  <div class="shop-grid">
+    <div class="shop-photos">
+      <div style="position:relative; height:290px; border-radius:16px; overflow:hidden; background:#DCE9EB">
+        <image-slot id="sdbs-shop-1" shape="rect" fit="cover" src="assets/ph/shop1.png" placeholder="Racks of vinyl"></image-slot>
+      </div>
+      <div style="position:relative; height:290px; border-radius:16px; overflow:hidden; background:#F4E9BE; margin-top:34px">
+        <image-slot id="sdbs-shop-2" shape="rect" fit="cover" src="assets/ph/shop2.png" placeholder="Counter / cake display"></image-slot>
+      </div>
+      <div style="position:relative; height:210px; border-radius:16px; overflow:hidden; background:#DCE9EB; grid-column:1 / -1">
+        <image-slot id="sdbs-outside" shape="rect" fit="cover" src="assets/ph/outside-area.webp" placeholder="Outdoor seating out front"></image-slot>
+        <span style="position:absolute; bottom:12px; left:12px; padding:5px 12px; border-radius:999px; background:rgba(43,28,36,0.72); color:#FBF6EC; font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; backdrop-filter:blur(4px)">Outdoor seating</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A7A80">The shop</div>
+      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(32px,3.6vw,48px); line-height:1.06; margin:12px 0 0">Two halves of the same room</h2>
+      <p style="font-size:17px; line-height:1.65; color:#5C4A52; margin:18px 0 0; text-wrap:pretty">One side is the cafe: warm tables inside, a serious coffee machine and a counter groaning with cake, plus a handful of sunny seats out front for watching the High Street go by. There&rsquo;s a comfy spot whatever the weather, indoors or out. The other side is the record shop: crates of new pressings up front, secondhand gems and bargain bins along the wall, CDs stacked underneath, and a shelf of gifts, tote bags and turntable odds and ends.</p>
+      <p style="font-size:17px; line-height:1.65; color:#5C4A52; margin:14px 0 0; text-wrap:pretty">No pressure to buy, no hovering. Bring a laptop, bring the dog, bring your nan. Ask us to spin something on the deck and we probably will.</p>
+      <div class="shop-cards">
+        <div style="padding:18px 20px; border-radius:14px; background:#DCE9EB">
+          <div style="font-family:'Instrument Serif',serif; font-size:24px; color:#3F6B72">Loyalty card</div>
+          <p style="margin:6px 0 0; font-size:13.5px; line-height:1.55; color:#3F6B72">Nine stamps, tenth coffee free. Ask for one at the till, no app, no email address.</p>
+        </div>
+        <div style="padding:18px 20px; border-radius:14px; background:#F4E9BE">
+          <div style="font-family:'Instrument Serif',serif; font-size:24px; color:#6B1F45">We buy records</div>
+          <p style="margin:6px 0 0; font-size:13.5px; line-height:1.55; color:#6B1F45">Clearing a collection? Bring a crate in and we&rsquo;ll have a look through with you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="max-width:1180px; margin:0 auto; padding:96px 28px 0">
+  <div class="visit-grid">
+    <div style="background:#6B1F45; color:#F7E9EF; border-radius:20px; padding:40px 42px">
+      <div style="font-size:11px; letter-spacing:0.24em; text-transform:uppercase; opacity:0.66">Find us</div>
+      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:40px; line-height:1.08; margin:12px 0 0; color:#FBF6EC">57&ndash;59 High Street,<br />Billericay CM12 9AX</h2>
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:26px; font-size:15px">
+        <a href="tel:01277631422" style="color:#F4E9BE; font-weight:600">01277 631422</a>
+        <a href="https://maps.google.com/?q=57-59+High+Street+Billericay+CM12+9AX" target="_blank" rel="noopener" style="color:#F4E9BE; font-weight:600">Open in Google Maps</a>
+      </div>
+      <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(251,246,236,0.22)">
+        <p style="margin:0; font-size:14px; line-height:1.6; opacity:0.85">A few doors along from the Chantry, with the town car parks a two-minute walk either side. Step-free entrance at the front.</p>
+      </div>
+    </div>
+    <div style="background:#FFFFFF; border:1px solid rgba(43,28,36,0.1); border-radius:20px; padding:36px 38px">
+      <div style="font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A7A80">Opening hours</div>
+      <ul id="sdbs-hours-list" style="list-style:none; margin:20px 0 0; padding:0; display:flex; flex-direction:column; gap:0">
+        <li data-day="1" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Monday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="2" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Tuesday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="3" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Wednesday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="4" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Thursday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="5" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Friday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="6" style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(43,28,36,0.09); font-size:15px"><span style="font-weight:600">Saturday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">9am &ndash; 5pm</span></li>
+        <li data-day="0" style="display:flex; justify-content:space-between; padding:11px 0; font-size:15px"><span style="font-weight:600">Sunday</span><span style="color:#5C4A52; font-variant-numeric:tabular-nums">10am &ndash; 4pm</span></li>
+      </ul>
+      <div style="margin-top:24px; position:relative; height:150px; border-radius:12px; overflow:hidden; background:#DCE9EB">
+        <image-slot id="sdbs-shopfront" shape="rect" fit="cover" src="assets/ph/shopfront.png" placeholder="Shopfront photo"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1180px; margin:0 auto; padding:96px 28px 0">
+  <div class="newsletter-grid" style="background:#DCE9EB; border-radius:20px; padding:52px 48px">
+    <div>
+      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,3.2vw,42px); line-height:1.1; margin:0; color:#2B1C24">Know what landed before the regulars do</h2>
+      <p style="margin:14px 0 0; font-size:16px; line-height:1.6; color:#3F6B72; max-width:32em">One email most Fridays: new arrivals, a couple of secondhand highlights and whatever&rsquo;s just come out of the oven. Unsubscribe whenever.</p>
+    </div>
+    <form id="sdbs-subscribe" style="display:flex; flex-direction:column; gap:10px">
+      <div style="display:flex; gap:10px; flex-wrap:wrap">
+        <input id="sdbs-email" type="email" aria-label="Email address" autocomplete="email" placeholder="you@example.com" style="flex:1 1 200px; padding:14px 18px; border-radius:999px; border:1px solid rgba(43,28,36,0.18); background:#FBF6EC; font-family:Karla,sans-serif; font-size:15px; color:#2B1C24; outline:none" />
+        <button type="submit" style="padding:14px 26px; border-radius:999px; border:none; background:#6B1F45; color:#FBF6EC; font-family:Karla,sans-serif; font-weight:600; font-size:15px; cursor:pointer">Sign me up</button>
+      </div>
+      <span id="sdbs-subscribe-note" aria-live="polite" style="font-size:13px; color:#3F6B72; min-height:19px"></span>
+    </form>
+  </div>
+</section>
+
+<footer style="margin-top:96px; border-top:1px solid rgba(43,28,36,0.12)">
+  <div style="max-width:1180px; margin:0 auto; padding:48px 28px 56px; display:flex; gap:40px; flex-wrap:wrap; align-items:flex-start">
+    <img src="assets/logo.jpg" alt="Slipped Discs' Brown Sugar logo" style="width:96px; height:96px; border-radius:50%; display:block" />
+    <div style="flex:1 1 240px">
+      <div style="display:inline-flex; align-items:baseline; gap:8px; color:#6B1F45">
+        <span style="font-family:'Google Sans','Poppins',sans-serif; font-weight:500; font-size:22px; letter-spacing:-0.5px; text-transform:uppercase">Slipped Discs&rsquo;</span>
+        <span style="font-family:'Alex Brush',cursive; font-size:22px; line-height:0.7">Brown Sugar</span>
+      </div>
+      <p style="margin:8px 0 0; font-size:14px; line-height:1.6; color:#5C4A52; max-width:26em">Great coffee, proper cafe food and a world of records on Billericay High Street. Independent, and planning to stay that way.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; font-size:14px">
+      <span style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A7A80">Visit</span>
+      <span style="color:#5C4A52">57&ndash;59 High Street</span>
+      <span style="color:#5C4A52">Billericay CM12 9AX</span>
+      <a href="tel:01277631422">01277 631422</a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; font-size:14px">
+      <span style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A7A80">Site</span>
+      <a href="#menu">Menu</a>
+      <a href="#stock">In stock</a>
+      <a href="#visit">Opening hours</a>
+    </div>
+  </div>
+  <div style="max-width:1180px; margin:0 auto; padding:0 28px 40px; font-size:12px; color:#8A7A80">&copy; 2026 Slipped Discs&rsquo; Brown Sugar. Site design in progress.</div>
+</footer>
+
+</div>
+
+</body>
+</html>
