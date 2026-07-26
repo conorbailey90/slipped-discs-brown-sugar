@@ -233,6 +233,40 @@ html.mobile-nav-open, body.mobile-nav-open { overflow: hidden; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
   .mobile-nav { display: flex; }
+
+  /* Reclaim screen width: the containers carry inline padding, so the
+     !important overrides below are what actually win on mobile. */
+  .wrap { padding-left: 16px !important; padding-right: 16px !important; }
+
+  /* Shrink the fixed-header brand so it stops crowding the hamburger. */
+  header .wrap { gap: 12px !important; }
+  .brand { gap: 9px !important; }
+  .brand img { width: 34px !important; height: 34px !important; }
+  .brand-name, .brand-script { font-size: 15px !important; }
+  .brand-tag { font-size: 9px !important; letter-spacing: 0.18em !important; margin-top: 5px !important; }
+
+  /* Tighter vertical rhythm between sections. */
+  #top { padding-top: 40px !important; }
+  #menu, #shop, #visit, .newsletter-section { padding-top: 64px !important; }
+  #stock { margin-top: 64px !important; }
+  .stock-wrap { padding-top: 52px !important; padding-bottom: 56px !important; }
+  footer { margin-top: 64px !important; }
+  #top .feature-grid { margin-top: 48px !important; }
+
+  /* Slim down card padding so content, not whitespace, fills the screen. */
+  .feature-grid > div { padding: 22px 18px !important; }
+  .menu-grid > div    { padding: 24px 18px !important; }
+  .visit-grid > div   { padding: 28px 20px !important; }
+  .newsletter-grid    { padding: 32px 20px !important; }
+
+  /* Hero media: shorter photo, smaller coffee badge tucked inside the edge. */
+  .hero-media > div:first-child { height: 360px !important; }
+  .hero-media > div:last-child {
+    width: 110px !important;
+    height: 110px !important;
+    left: -6px !important;
+    bottom: -14px !important;
+  }
 }
 
 /* --- Phone --- */
@@ -240,4 +274,6 @@ html.mobile-nav-open, body.mobile-nav-open { overflow: hidden; }
   .stock-grid  { grid-template-columns: 1fr 1fr; gap: 12px; }
   .shop-photos { grid-template-columns: 1fr; }
   .shop-cards  { grid-template-columns: 1fr; }
+  .wrap { padding-left: 14px !important; padding-right: 14px !important; }
+  .visit-grid h2 { font-size: 33px !important; }
 }
